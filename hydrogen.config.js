@@ -8,8 +8,8 @@ export default defineConfig({
   shopify: () => ({
     defaultLanguageCode: 'EN',
     defaultCountryCode: 'IN',
-    storeDomain: 'guardian-gnc.myshopify.com',
-    storefrontToken: '0b01e613c4f3aed5eabc7c086a84ccf7',
+    storeDomain: Oxygen.env.SHOPIFY_STORE_DOMAIN,
+    storefrontToken: Oxygen.env.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN,
     storefrontApiVersion: '2022-07',
   }),
   session: CookieSessionStorage('__session', {
